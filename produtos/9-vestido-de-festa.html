@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Reuse Brechó - Vestido de Festa</title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="d-flex flex-column">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+            <div class="container">
+
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/img/Logo_v2.png" alt="Logo da Loja">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+
+                    <form class="d-flex ms-auto me-2">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar produtos"
+                            aria-label="Pesquisar">
+                        <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                    </form>
+
+                    <button id="user-popover" type="button" class="btn btn-outline-light" data-bs-toggle="popover"
+                        data-bs-placement="bottom" data-bs-html="true" title="Seja bem-vindo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                        </svg>
+                    </button>
+
+                    <div id="user-popover-content" style="display: none;">
+                        <a href="/login.html" class="btn btn-danger btn-sm">Entrar</a>
+                        <a href="/cadastre-se.html" class="btn btn-outline-danger btn-sm">Criar Conta</a>
+                    </div>
+                    <script>
+                        var popover = new bootstrap.Popover(document.getElementById('user-popover'), {
+                            content: document.getElementById('user-popover-content').innerHTML,
+                            sanitize: false,
+                            trigger: 'manual',
+                            html: true
+                        });
+
+                        document.getElementById('user-popover').addEventListener('click', function () {
+                            popover.toggle();
+                        });
+
+                    </script>
+
+                    <div class="position-relative">
+                        <a href="#;" class="nav-link text-white">
+                            <i class="bi-bag" style="font-size: 24px; line-height: 24px;"></i>
+                            <span class="badge rounded-pill bg-light text-danger" title="0 produto(s) na sacola"
+                                style="left: 10px;"><small>0</small></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="flex-fill">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6">
+                        <img src="/img/produtos/9/22.png" class="img-thumbnail img-ampliavel"
+                            id="imgProduto">
+                        <br class="clearfix">
+                        <div class="row my-3 gx-3">
+                            <div class="col-3">
+                                <img src="/img/produtos/9/22.png" class="img-thumbnail"
+                                    onclick="trocarImagem(this)">
+                            </div>
+                            <div class="col-3">
+                                <img src="/img/produtos/9/21.png" class="img-thumbnail"
+                                    onclick="trocarImagem(this)">
+                            </div>
+                            <div class="col-3">
+                                <img src="/img/produtos/9/vgdx.png" class="img-thumbnail"
+                                    onclick="trocarImagem(this)">
+                            </div>
+                            <div class="col-3">
+                                <img src="/img/produtos/9/20220615_094628.jpg" class="img-thumbnail"
+                                    onclick="trocarImagem(this)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <h1>Vestido de festa</h1>
+                        <p>
+                            <strong>Descrição:</strong> Modelo que nunca sai de moda, usado apenas uma vez, acompanha
+                            echarpe.
+                        </p>
+                        <p>
+                            <strong>Tamnho:</strong> M, a modelo tem 1,60 de altura e pesa 63kg
+                        </p>
+                        <p>
+                            <strong>Material:</strong>Tecido veludo cotelê
+                        </p>
+                        <p>
+                            <strong>Preço:</strong> R$ 80,00
+                        </p>
+                        <p>
+                            Sem marcas de uso, produto higienizado.
+                        </p>
+                        <p>
+                            <button class="btn btn-lg btn-danger mb-3 mb-xl-0 me-2">
+                                <i class="bi-cart"></i> Adicionar ao Carrinho
+                            </button>
+                            <button class="btn btn-lg btn-outline-danger">
+                                <i class="bi-heart"></i> Adicionar aos Favoritos
+                            </button>
+                        </p>
+                    </div>
+
+                    <center>
+                        <div class="footer">
+                            <br>
+                            <p>Voltar para a <a href="/index.html">Página Inicial</a></p>
+                        </div>
+                    </center>
+
+                    <footer class="border-top text-muted bg-light">
+                        <div class="row py-3">
+                            <div class="col-12 col-md-4 text-center">
+                                <a href="/direitos.html" class="text-decoration-none text-dark">Direitos
+                                    autorais</a><br>
+                                <a href="#;" class="text-decoration-none text-dark">Política de Privacidade</a><br>
+                                <a href="#;" class="text-decoration-none text-dark">Termos de Uso</a><br>
+                                <a href="#;" class="text-decoration-none text-dark">Política de Entrega</a><br>
+                                <a href="#;" class="text-decoration-none text-dark">Trocas e Devoluções</a>
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                E-mail: <a href=#; class="text-decoration-none text-dark">at@reusebrecho.com.br</a><br>
+                                Telefone: (71) 3247-7650<br>
+                                Rua Carijós, 13, Rio Vermelho, Salvador/BA, 41940-020.<br>
+                            </div>
+                            <div class="col-12 col-md-4">
+
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d971.8500248748084!2d-38.48721184750587!3d-13.01017419999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7160354ae1d1f21%3A0x956337ad3f720439!2sR.%20Carij%C3%B3s%2C%2013%20-%20Rio%20Vermelho%2C%20Salvador%20-%20BA%2C%2041940-020!5e0!3m2!1spt-BR!2sbr!4v1696256441826!5m2!1spt-BR!2sbr"
+                                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+                <script>
+                    function trocarImagem(el) {
+                        var imgProduto = document.getElementById("imgProduto");
+                        imgProduto.src = el.src;
+                    }
+
+                </script>
+
+</body>
+
+</html>

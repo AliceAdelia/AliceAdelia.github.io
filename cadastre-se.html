@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <title>Formulário da cadastro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('/img/fundo.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .col-md-6 {
+            max-width: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 form-container">
+                <center>
+                    <figure>
+                        <img src="/img/Logo_v2_pequena.png" class="img-fluid">
+                    </figure>
+                </center>
+                <div class="col-md-6">
+                    <h1>Prezado Cliente, seja Bem Vindo!!!</h1>
+                    <h2>Preencha o formulário abaixo</h2>
+                    <form>
+                        <fieldset>
+                            <legend>Dados Pessoais</legend>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome:</label>
+                                <input type="text" class="form-control" id="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="sobrenome" class="form-label">Sobrenome:</label>
+                                <input type="text" class="form-control" id="sobrenome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nascimento" class="form-label">Nascimento:</label>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="dia" placeholder="dd">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="mes" placeholder="mm">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="ano" placeholder="aaaa">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="rg" class="form-label">RG:</label>
+                                <input type="text" class="form-control" id="rg">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cpf" class="form-label">CPF:</label>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="cpf" placeholder="">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="cpf2" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Dados de Endereço</legend>
+                            <div class="mb-3">
+                                <label for="rua" class="form-label">Rua:</label>
+                                <input type="text" class="form-control" id="rua">
+                            </div>
+                            <div class="mb-3">
+                                <label for="numero" class="form-label">Número:</label>
+                                <input type="text" class="form-control" id="numero">
+                            </div>
+                            <div class="mb-3">
+                                <label for="bairro" class="form-label">Bairro:</label>
+                                <input type="text" class="form-control" id="bairro">
+                            </div>
+                            <div class="mb-3">
+                                <label for="estado" class="form-label">Estado:</label>
+                                <select class="form-control" id="estado">
+                                    <option value="al">Alagoas</option>
+                                    <option value="am">Amazonas</option>
+                                    <option value="ap">Amapá</option>
+                                    <option value="ba">Bahia</option>
+                                    <option value="ce">Ceará</option>
+                                    <option value="df">Distrito Federal</option>
+                                    <option value="es">Espírito Santo</option>
+                                    <option value="go">Goiás</option>
+                                    <option value="ma">Maranhão</option>
+                                    <option value="mt">Mato Grosso</option>
+                                    <option value="ms">Mato Grosso do Sul</option>
+                                    <option value="mg">Minas Gerais</option>
+                                    <option value="pa">Pará</option>
+                                    <option value="pb">Paraíba</option>
+                                    <option value="pr">Paraná</option>
+                                    <option value="pe">Pernambuco</option>
+                                    <option value="pi">Piauí</option>
+                                    <option value="rj">Rio de Janeiro</option>
+                                    <option value="rn">Rio Grande do Norte</option>
+                                    <option value="ro">Rondônia</option>
+                                    <option value="rs">Rio Grande do Sul</option>
+                                    <option value="rr">Roraima</option>
+                                    <option value="sc">Santa Catarina</option>
+                                    <option value="se">Sergipe</option>
+                                    <option value="sp">São Paulo</option>
+                                    <option value="to">Tocantins</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cidade" class="form-label">Cidade:</label>
+                                <input type="text" class="form-control" id="cidade">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cep" class="form-label">CEP:</label>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="cep" placeholder="">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="cep2" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Dados de Login</legend>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="login" class="form-label">Login de Usuário:</label>
+                                <input type="text" class="form-control" id="login">
+                            </div>
+                            <div class="mb-3">
+                                <label for="senha" class="form-label">Senha:</label>
+                                <input type="password" class="form-control" id="senha">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmarSenha" class="form-label">Confirme a Senha:</label>
+                                <input type="password" class="form-control" id="confirmarSenha">
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+<center>
+    <div class="footer">
+        <br>
+        <p>Voltar para a <a href="index.html">Página Inicial</a></p>
+    </div>
+</center>
+
+</html>

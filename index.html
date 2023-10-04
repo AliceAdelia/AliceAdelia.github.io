@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   <title>Reuse Brechó - Página Inicial</title>
+   <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/bootstrap-icons/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="/css/style.css">
+   <script src="/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+   <div class="d-flex flex-column">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+         <div class="container">
+            <a class="navbar-brand" href="/index.html">
+               <img src="/img/Logo_v2.png" alt="Logo da Loja">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+               <form class="d-flex ms-auto me-2">
+                  <input class="form-control me-2" type="search" placeholder="Pesquisar produtos"
+                     aria-label="Pesquisar">
+                  <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+               </form>
+               <button id="user-popover" type="button" class="btn btn-outline-light" data-bs-toggle="popover"
+                  data-bs-placement="bottom" data-bs-html="true" title="Seja bem-vindo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                     class="bi bi-person" viewBox="0 0 16 16">
+                     <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                  </svg>
+               </button>
+               <div id="user-popover-content" style="display: none;">
+                  <a href="/login.html" class="btn btn-danger btn-sm">Entrar</a>
+                  <a href="/cadastre-se.html" class="btn btn-outline-danger btn-sm">Criar Conta</a>
+               </div>
+               <script>
+                  var popover = new bootstrap.Popover(document.getElementById('user-popover'), {
+                     content: document.getElementById('user-popover-content').innerHTML,
+                     sanitize: false,
+                     trigger: 'manual',
+                     html: true
+                  });
+
+                  document.getElementById('user-popover').addEventListener('click', function () {
+                     popover.toggle();
+                  });
+
+               </script>
+               <div class="position-relative">
+                  <a href="#;" class="nav-link text-white">
+                     <i class="bi-bag" style="font-size: 24px; line-height: 24px;"></i>
+                     <span class="badge rounded-pill bg-light text-danger" title="0 produto(s) na sacola"
+                        style="left: 10px;"><small>0</small></span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-suave navbar-bottom navbar-custom-bg">
+         <div class="container">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="/sobre-mim.html">Sobre Mim</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/contato.html">Contato</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/trabalhe-conosco.html">Trabalhe conosco</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel" data-interval="5000">
+                  <div class="carousel-indicators">
+                     <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+                     <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+                     <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+                     <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="/img/slides/1.png" class="d-block w-100">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="/img/slides/2.png" class="d-block w-100">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="/img/slides/3.png" class="d-block w-100">
+                     </div>
+                     <div class="carousel-item">
+                        <img src="/img/slides/4.png" class="d-block w-100">
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselMain" role="button" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselMain" role="button" data-bs-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Próximo</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <hr class="mt-3">
+      </div>
+   </div>
+   <main class="flex-fill">
+      <div class="container">
+         <div class="row">
+            <div class="col-12 col-md-5">
+               <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                  <div class="input-group input-group-sm">
+                     <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                     <button class="btn btn-danger">Buscar</button>
+                  </div>
+               </form>
+            </div>
+            <div class="col-12 col-md-7">
+               <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                  <form class="d-inline-block">
+                     <select class="form-select form-select-sm">
+                        <option>Ordenar pelo nome</option>
+                        <option>Ordenar pelo menor preço</option>
+                        <option>Ordenar pelo maior preço</option>
+                     </select>
+                  </form>
+                  </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+         <hr class="mt-3">
+         <div class="row g-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+               <div class="card text-center bg-light">
+                  <a href="#" class="position-absolute end-0 p-2 text-danger">
+                     <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                  </a>
+                  <a href="/produtos/1-colar-yza.html">
+                     <img src="/img/produtos/1/photo1694637875.jpeg"
+                        class="card-img-top miniatura-produto">
+                  </a>
+                  <div class="card-header">
+                     R$ 45,00
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Colar abstrato Yza</h5>
+                     <p class="card-text truncar-3l">
+                        Lindo colar em inox, exclusivo
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#;" class="btn btn-danger mt-2 d-block">
+                        Adicionar ao Carrinho
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+               <div class="card text-center bg-light">
+                  <a href="#" class="position-absolute end-0 p-2 text-danger">
+                     <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                  </a>
+                  <a href="/produtos/2-livro-feliz-por-nada.html">
+                     <img src="/img/produtos/2/photo1694650768.jpeg"
+                        class="card-img-top miniatura-produto">
+                  </a>
+                  <div class="card-header">
+                     R$ 5,00
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Livro Feliz por nada</h5>
+                     <p class="card-text truncar-3l">
+                        Um best seller
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#;" class="btn btn-danger mt-2 d-block">
+                        Adicionar ao Carrinho
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+               <div class="card text-center bg-light">
+                  <a href="#" class="position-absolute end-0 p-2 text-danger">
+                     <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                  </a>
+                  <a href="/produtos/3-colar-caveira.html">
+                     <img src="/img/produtos/3/photo1694818851.jpeg"
+                        class="card-img-top miniatura-produto">
+                  </a>
+                  <div class="card-header">
+                     R$ 15,00
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Colar caveira</h5>
+                     <p class="card-text truncar-3l">
+                        Lindo colar caveira, cordão ajustável
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#;" class="btn btn-danger mt-2 d-block">
+                        Adicionar ao Carrinho
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+               <div class="card text-center bg-light">
+                  <a href="#" class="position-absolute end-0 p-2 text-danger">
+                     <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                  </a>
+                  <a href="/produtos/4-mini-tv-slide-retro.html">
+                     <img src="/img/produtos/4/photo1694905904 (1).jpeg"
+                        class="card-img-top miniatura-produto">
+                  </a>
+                  <div class="card-header">
+                     R$ 60,00
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Mini tv slide retrô</h5>
+                     <p class="card-text truncar-3l">
+                        Slides da cidade de Salvador BA
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#;" class="btn btn-danger mt-2 d-block">
+                        Adicionar ao Carrinho
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+               <div class="card text-center bg-light">
+                  <a href="#" class="position-absolute end-0 p-2 text-danger">
+                     <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                  </a>
+                  <a href="/produtos/5-mini-pelucia-minnie.html">
+                     <img src="/img/produtos/5/photo1694896463.jpeg"
+                        class="card-img-top miniatura-produto">
+                  </a>
+                  <div class="card-header">
+                     R$ 30,00
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Mini pelúcia Minnie</h5>
+                     <p class="card-text truncar-3l">
+                        Disney
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#;" class="btn btn-danger mt-2 d-block">
+                        Adicionar ao Carrinho
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+               <div class="card text-center bg-light">
+                  <a href="#" class="position-absolute end-0 p-2 text-danger">
+                     <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                  </a>
+                  <a href="/produtos/6-livro-sal-acucar-gordura.html">
+                     <img src="/img/produtos/6/photo1694869406.jpeg"
+                        class="card-img-top miniatura-produto">
+                  </a>
+                  <div class="card-header">
+                     R$ 7,00
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Livro Sal Açucar Gordura</h5>
+                     <p class="card-text truncar-3l">
+                        Vencedor do Pulitzer
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#;" class="btn btn-danger mt-2 d-block">
+                        Adicionar ao Carrinho
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+               <div class="card text-center bg-light">
+                  <a href="#" class="position-absolute end-0 p-2 text-danger">
+                     <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                  </a>
+                  <a href="/produtos/7-o-projeto-desfazer.html">
+                     <img src="/img/produtos/7/IMG_20230930_104012.jpg"
+                        class="card-img-top miniatura-produto">
+                  </a>
+                  <div class="card-header">
+                     R$ 7,00
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">O projeto desfazer</h5>
+                     <p class="card-text truncar-3l">
+                        Livro para mudar a forma de pensar
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#;" class="btn btn-danger mt-2 d-block">
+                        Adicionar ao Carrinho
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+               <div class="card text-center bg-light">
+                  <a href="#" class="position-absolute end-0 p-2 text-danger">
+                     <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                  </a>
+                  <a href="/produtos/8-porta-joias-prato.html">
+                     <img src="/img/produtos/8/photo1696076225.jpeg"
+                        class="card-img-top miniatura-produto">
+                  </a>
+                  <div class="card-header">
+                     R$ 30,00
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Porta joias prato</h5>
+                     <p class="card-text truncar-3l">
+                        Produto exclusivo, feito à mão
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#;" class="btn btn-danger mt-2 d-block">
+                        Adicionar ao Carrinho
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+               <div class="card text-center bg-light">
+                  <a href="#" class="position-absolute end-0 p-2 text-danger">
+                     <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                  </a>
+                  <a href="/produtos/9-vestido-de-festa.html">
+                     <img src="/img/produtos/9/22.png" class="card-img-top miniatura-produto">
+                  </a>
+                  <div class="card-header">
+                     R$ 80,00
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Vestido de festa</h5>
+                     <p class="card-text truncar-3l">
+                        Lindo vestido, elegante e sofisticado
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#;" class="btn btn-danger mt-2 d-block">
+                        Adicionar ao Carrinho
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+               <div class="card text-center bg-light">
+                  <a href="#" class="position-absolute end-0 p-2 text-danger">
+                     <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                  </a>
+                  <a href="/produtos/10-camisa-social-masculina.html">
+                     <img src="/img/produtos/10/photo_4961110517838097699_y.jpg"
+                        class="card-img-top miniatura-produto">
+                  </a>
+                  <div class="card-header">
+                     R$ 10,00
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Camisa social masculina manga longa</h5>
+                     <p class="card-text truncar-3l">
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#;" class="btn btn-danger mt-2 d-block">
+                        Adicionar ao Carrinho
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+               <div class="card text-center bg-light">
+                  <a href="#" class="position-absolute end-0 p-2 text-danger">
+                     <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                  </a>
+                  <a href="/produtos/11-mini-figura-liga-da-justica-superman.html">
+                     <img src="/img/produtos/11/photo1696121623 (2).jpeg"
+                        class="card-img-top miniatura-produto">
+                  </a>
+                  <div class="card-header">
+                     R$ 45,00
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Mini Figura Liga Da Justiça Superman</h5>
+                     <p class="card-text truncar-3l">
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#;" class="btn btn-danger mt-2 d-block">
+                        Adicionar ao Carrinho
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+               <div class="card text-center bg-light">
+                  <a href="#" class="position-absolute end-0 p-2 text-danger">
+                     <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                  </a>
+                  <a href="/produtos/12-camisa-social-masculina-manga-curta.html">
+                     <img src="/img/produtos/12/photo_4961110517838097708_y.jpg"
+                        class="card-img-top miniatura-produto">
+                  </a>
+                  <div class="card-header">
+                     R$ 10,00
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Camisa social masculina manga curta</h5>
+                     <p class="card-text truncar-3l">
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <a href="#;" class="btn btn-danger mt-2 d-block">
+                        Adicionar ao Carrinho
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="container">
+               <hr class="mt-3">
+               <center>
+                  <div class="footer">
+                     <br>
+                     <p>Voltar para o <a href="/index.html">topo</a></p>
+                  </div>
+               </center>
+               <footer class="border-top text-muted bg-light">
+                  <div class="row py-3">
+                     <div class="col-12 col-md-4 text-center">
+                        <a href="/direitos.html" class="text-decoration-none text-dark">Direitos autorais</a><br>
+                        <a href="#;" class="text-decoration-none text-dark">Política de Privacidade</a><br>
+                        <a href="#;" class="text-decoration-none text-dark">Termos de Uso</a><br>
+                        <a href="#;" class="text-decoration-none text-dark">Política de Entrega</a><br>
+                        <a href="#;" class="text-decoration-none text-dark">Trocas e Devoluções</a>
+                     </div>
+                     <div class="col-12 col-md-4 text-center">
+                        E-mail: <a href=#; class="text-decoration-none text-dark">at@reusebrecho.com.br</a><br>
+                        Telefone: (71) 3247-7650<br>
+                        Rua Carijós, 13, Rio Vermelho, Salvador/BA, 41940-020.<br>
+                     </div>
+                     <div class="col-12 col-md-4">
+                        <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d971.8500248748084!2d-38.48721184750587!3d-13.01017419999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7160354ae1d1f21%3A0x956337ad3f720439!2sR.%20Carij%C3%B3s%2C%2013%20-%20Rio%20Vermelho%2C%20Salvador%20-%20BA%2C%2041940-020!5e0!3m2!1spt-BR!2sbr!4v1696256441826!5m2!1spt-BR!2sbr"
+                           width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                           referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                  </div>
+               </footer>
+            </div>
+
+            <footer class="bg-danger text-light text-center py-3">
+               <div class="container">
+                  <p>&copy; 2023 Reuse Brechó. Todos os direitos reservados.</p>
+               </div>
+            </footer>
+
+            <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

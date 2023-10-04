@@ -1,0 +1,137 @@
+/* Estilo para a imagem da logo */
+.navbar-brand img {
+    max-width: 160px; /* Define o tamanho máximo da imagem */
+    margin-right: 200px; /* Espaço à direita da imagem (ajuste conforme necessário) */
+}
+
+/* Ajustar espaçamento entre a logo e a barra de pesquisa */
+.navbar-brand {
+    margin-right: 30; /* Aumente ou diminua conforme necessário */
+}
+
+.miniatura-produto {
+    width: 200px; /* Largura fixa desejada para todas as miniaturas */
+    height: 200px; /* Altura fixa desejada para todas as miniaturas */
+    overflow: hidden; /* Para recortar as imagens que são maiores do que as miniaturas */
+}
+
+.bg-suave {
+    background: #e8d5f0;
+}
+
+/* Ajustar espaçamento entre o ícone de pessoa e outros elementos no navbar */
+#user-popover {
+    margin-right: 300px; /* Aumente ou diminua conforme necessário */
+}
+
+/* Ajustar espaçamento entre os botões "Sobre mim" e "Contato" no navbar */
+.navbar-nav .btn {
+    margin-right: 10px; /* Aumente ou diminua conforme necessário */
+}
+
+/* Ajustar espaçamento entre o ícone do carrinho e o badge no navbar */
+.navbar-nav .bi-bag {
+    margin-right: 1px; /* Aumente ou diminua conforme necessário */
+}
+
+/* Estilo de hover para os botões */
+.btn:hover {
+    background-color: #fff; /* Mude a cor de fundo no hover conforme desejado */
+    color: rgb(63, 6, 68); /* Mude a cor do texto no hover conforme desejado */
+    cursor: pointer;
+}
+
+<style>
+    .navbar-custom-bg {
+        background-color: blue; /* Substitua "blue" pela cor desejada */
+    }
+</style>
+
+/* Estilo para vídeos */
+video {
+    width: 50%; /* 50% da largura do contêiner pai */
+    max-width: 540px; /* Largura máxima do vídeo */
+    height: auto; /* Altura automática para manter a proporção original */
+}
+
+/* Aumentar a largura e altura da barra de pesquisa */
+.navbar .navbar-search input[type="text"] {
+    width: 200px; /* Defina a largura desejada */
+    height: 40px; /* Defina a altura desejada */
+}
+
+/* Estilo para o corpo da página */
+body {
+    min-width: 200px; /* Define a largura mínima do corpo da página */
+}
+
+/* Estilo para imagens ampliáveis no hover */
+.img-ampliavel:hover {
+    transform: scale(1.2); /* Aumenta a imagem em 200% */
+    transition: transform 0.2s ease; /* Adiciona uma transição suave */
+}
+
+/* Estilo para um contêiner com altura mínima igual à altura da viewport */
+.wrapper {
+    min-height: 10vh;
+}
+
+/* Estilo para parágrafos que são truncados após 3 linhas */
+p.truncar-3l {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Estilo para telas com largura máxima de 469px */
+@media screen and (max-width: 469px) {
+    .mt-xs-3 {
+        margin-top: 1rem;
+    }
+}
+
+/* Estilo para links de texto no hover */
+label:hover .text-dark {
+    transition: color 0.2s ease;
+    color: white !important;
+}
+
+/* Estilo para links de texto */
+label .text-dark {
+    transition: color 0.2s ease;
+}
+
+/* Estilo para botões de seleção */
+.btn-check:checked+.btn-outline-danger .text-dark,
+.btn-check:active+.btn-outline-danger .text-dark,
+.btn-check:hover+.btn-outline-danger .text-dark {
+    transition: color 0.2s ease;
+    color: white !important;
+}
+
+/* Estilo para elementos com flex */
+.flex-even {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Estilo para botões de acordeão não colapsados */
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #2b2ecc;
+}
+
+/* Estilo para ícone de acordeão não colapsado */
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+
+
+/* Estilo para rótulos dentro de fieldsets em uma estrutura de grade */
+fieldset.row .form-floating>label {
+    margin-left: calc(var(--bs-gutter-x) * 0.5); /* Define a margem esquerda com base no espaço da grade */
+}
+
